@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Quiz</title>
+</head>
+<body>
+    <h1>Python Quiz</h1>
+    <form method="POST" action="/submit">
+        {% for q in questions %}
+            {% set idx = loop.index0 %}
+            <div>
+                <label>{{ loop.index }}. {{ q[0] }}</label><br>
+                <input type="text" name="q{{ idx }}">
+            </div>
+            <br>
+        {% endfor %}
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
