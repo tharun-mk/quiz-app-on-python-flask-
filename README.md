@@ -1,0 +1,1 @@
+Easy program made with python(flask) and a easy guide to make it on your own or you may also use the code to set your own quizes and displays the score and let them to search for the answers and learning more on that 
